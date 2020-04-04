@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImageContainer renders 1`] = `
+<DocumentFragment>
+  <a
+    class="image-container"
+    href="https://unsplash.com/photos/Ic-NitASHiI"
+    rel="noopener noreferrer"
+    style="padding-bottom: 150%;"
+    target="_BLANK"
+  />
+</DocumentFragment>
+`;

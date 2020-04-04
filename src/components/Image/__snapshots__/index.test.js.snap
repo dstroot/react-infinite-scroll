@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image renders 1`] = `
+<DocumentFragment>
+  <img
+    alt="man in blue polo shirt sitting on chair near window"
+    class="image thumb"
+    src="https://images.unsplash.com/photo-1586007484979-bbea94d7fae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjk5NjQ5fQ"
+    style="visibility: visible;"
+  />
+  <img
+    alt="man in blue polo shirt sitting on chair near window"
+    class="image full"
+    src="https://images.unsplash.com/photo-1586007484979-bbea94d7fae0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjk5NjQ5fQ"
+    style="opacity: 0;"
+  />
+</DocumentFragment>
+`;
