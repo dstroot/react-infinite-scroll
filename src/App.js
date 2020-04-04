@@ -2,7 +2,7 @@ import React from "react";
 import { ImageContainer } from "./components/ImageContainer";
 import "./App.css";
 
-const checkForError = response => {
+const checkForError = (response) => {
   if (!response.ok) throw Error(response.statusText);
   return response;
 };
@@ -15,19 +15,19 @@ function App() {
 
   // This is our "infinite scroll".  If the visible image is the next
   // to last image, then increment the page, which kicks off another API call
-  const onIsVisible = index => {
+  const onIsVisible = (index) => {
     if (index === images.length - 1) {
-      setPage(page => page + 1);
+      setPage((page) => page + 1);
     }
   };
 
   React.useEffect(() => {
-    const fetchPhotos = async page => {
+    const fetchPhotos = async (page) => {
       setLoading(true);
       try {
         const result = await fetch(`/.netlify/functions/photos?page=${page}`);
         const photoResult = await checkForError(result).json();
-        setImages(photos => {
+        setImages((photos) => {
           return photos.concat(photoResult); // notice concatination for infinite scroll
         });
       } catch (e) {
@@ -43,7 +43,6 @@ function App() {
       <div className="container">
         {error && <div>Error occured. Please refresh page and try again.</div>}
         {images.map((res, index) => {
-          console.log(JSON.stringify(res));
           return (
             <div key={`${res.id}-${index}`} className="wrapper">
               <ImageContainer
