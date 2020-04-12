@@ -12,7 +12,7 @@ describe("ImageContainer", () => {
   beforeAll(() => {
     const mockEntry = { isIntersecting: true };
 
-    window.IntersectionObserver = jest.fn(function() {
+    window.IntersectionObserver = jest.fn(function () {
       this.observe = () => {};
       this.unobserve = jest.fn();
     });
@@ -24,8 +24,6 @@ describe("ImageContainer", () => {
 
   it("renders", () => {
     // arrange
-
-    // act
     const { asFragment } = render(
       <ImageContainer
         src={data.urls.regular}
@@ -37,6 +35,8 @@ describe("ImageContainer", () => {
         onIsVisible={visibleMock}
       />
     );
+
+    // act
 
     // assert
     expect(asFragment()).not.toBeNull();

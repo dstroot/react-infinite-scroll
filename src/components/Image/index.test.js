@@ -13,8 +13,6 @@ import data from "./__test__/data.json";
 describe("Image", () => {
   it("renders", () => {
     // arrange
-
-    // act
     const { asFragment } = render(
       <Image
         src={data.urls.regular}
@@ -22,6 +20,8 @@ describe("Image", () => {
         alt={data.alt_description}
       />
     );
+
+    // act
 
     // assert
     expect(asFragment()).not.toBeNull();
