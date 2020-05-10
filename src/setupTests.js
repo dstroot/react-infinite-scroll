@@ -1,6 +1,3 @@
-// setup react testing library
-import "@testing-library/jest-dom/extend-expect";
-
 // eslint-disable-next-line no-console
 const error = console.error;
 // eslint-disable-next-line no-console
