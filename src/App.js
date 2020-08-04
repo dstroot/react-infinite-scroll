@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ImageContainer } from "./components/ImageContainer";
 import "./App.css";
 
@@ -21,7 +21,7 @@ function App() {
     }
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchPhotos = async (page) => {
       setLoading(true);
       try {
@@ -54,24 +54,6 @@ function App() {
                 url={res.links.html}
                 onIsVisible={() => onIsVisible(index)}
               />
-              {/* <figcaption>
-                Photo by{" "}
-                <a
-                  href={res.user.links.html}
-                  rel="noopener noreferrer"
-                  target="_BLANK"
-                >
-                  {res.user.name}
-                </a>{" "}
-                on{" "}
-                <a
-                  rel="noopener noreferrer"
-                  target="_BLANK"
-                  href="https://unsplash.com"
-                >
-                  Unsplash
-                </a>
-              </figcaption> */}
             </div>
           );
         })}
