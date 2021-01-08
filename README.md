@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2089d4f4-ec5c-405f-a252-d427626e8efc/deploy-status)](https://app.netlify.com/sites/modest-panini-61a8ce/deploys)
+
 # Medium Style progressively loaded images with infinite scrolling
 
 ### About
