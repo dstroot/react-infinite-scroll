@@ -1,7 +1,7 @@
 :root {
-  --body-background-color: #f0f7f7;
+  --body-background-color: #ebebeb;
   --body-text-color: #002626;
-  --card-background-color: #ffffff;
+  --card-background-color: #d7d7d7;
   --nav-background-color: #ffffff;
   --nav-border-bottom-color: #d8e8e4;
   --nav-current-border-bottom-color: #1abc9c;
@@ -21,6 +21,6 @@
   --submit-button-border-color: #1a46ad;
   --submit-button-background-color: #3867d6;
   --submit-button-color: #ffffff;
-  --graph-opacity: 1;
+  --graph-opacity: 0.5;
   --graph-filter: none;
 }
